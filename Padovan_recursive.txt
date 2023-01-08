@@ -1,0 +1,12 @@
+function Padovan_recursive(n: integer) ->integer
+kamus
+	one, two, three, four, i: integer
+algoritma
+	one, two, three, four = 1
+	for (i = 3, i <= n, i++) do
+		four = one + two
+		one = two
+		two = three
+		three = four
+	endfor
+	-> four

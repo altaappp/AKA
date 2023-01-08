@@ -1,0 +1,9 @@
+function Padovan_iterative(n: integer) -> integer
+kamus
+algoritma
+	if n <= 2 then
+		-> 1
+	else
+		->Padovan_iterative(n-2) + Padovan_iterative(n-3)
+	endif
+endfunction
